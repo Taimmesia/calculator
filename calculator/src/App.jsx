@@ -1,11 +1,20 @@
+import { useReducer } from "react";
 import "./App.css";
 
+function reducer() {}
+
 function App() {
+  const [{ currentOperand, prevOperand, operation }, dispatch] = useReducer(
+    reducer,
+    {}
+  );
   return (
     <div className="calculator-grid">
       <div className="output">
-        <div className="prev-operand">12345 *</div>
-        <div className="current-operand">1234,567</div>
+        <div className="prev-operand">
+          {prevOperand} {operation}
+        </div>
+        <div className="current-operand">{currentOperand}</div>
       </div>
       <button className="span-two">AC</button>
       <button>DEL</button>
