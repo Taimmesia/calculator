@@ -16,3 +16,13 @@ body {
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
   /* added 7rem to be default size or expand to fill full height with auto*/
 }
+
+.span-two {
+  grid-column: span 2;
+  /*spans two columns*/
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.75);
+}
