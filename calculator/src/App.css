@@ -17,6 +17,14 @@ body {
   /* added 7rem to be default size or expand to fill full height with auto*/
 }
 
+.calculator-grid button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
 .span-two {
   grid-column: span 2;
   /*spans two columns*/
